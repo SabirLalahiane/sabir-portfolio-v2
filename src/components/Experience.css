@@ -1,0 +1,79 @@
+.experience {
+  padding: 120px 0;
+  background: var(--bg);
+}
+
+.experience-timeline {
+  margin-top: 40px;
+  position: relative;
+}
+
+.experience-item {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  padding-bottom: 48px;
+}
+
+.experience-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience-item:last-child .experience-line {
+  display: none;
+}
+
+.experience-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 4px var(--accent-light), 0 0 20px rgba(244, 98, 66, 0.3);
+}
+
+.experience-line {
+  position: absolute;
+  left: 6px;
+  top: 20px;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.experience-period {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.experience-role {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 8px 0 4px;
+}
+
+.experience-company {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.experience-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .experience-item { gap: 20px; }
+}
